@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ONE UNIT IMPORT — We source products from stores worldwide and ship them to your doorstep.">
+<title>ONE UNIT IMPORT | Global Shopping & Delivery</title>
+<style>
+:root{--dark:#0b1220;--gold:#d8a83e;--cream:#f7f3ea;--muted:#667085;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--dark);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.96);backdrop-filter:blur(8px);color:#fff}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:1.5px;font-size:20px}.logo span{color:var(--gold)}
+nav{display:flex;gap:24px;align-items:center}nav a{font-size:14px;color:#e9edf5}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;font-weight:800;transition:.2s}
+.btn-gold{background:var(--gold);color:#111}.btn-gold:hover{transform:translateY(-2px)}
+.btn-outline{border:1px solid #ffffff55;color:#fff}
+.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+.hero{background:linear-gradient(115deg,#09111f 10%,#15243b 58%,#253a55);color:#fff;padding:105px 0 95px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #d8a83e44;border-radius:50%;right:-100px;top:-120px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.eyebrow{color:var(--gold);font-weight:900;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,70px);line-height:1.04;margin:15px 0 22px}
+.hero p{color:#d5dbea;max-width:650px;font-size:18px}
+.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.hero-card{background:#ffffff12;border:1px solid #ffffff22;border-radius:18px;padding:30px;box-shadow:0 20px 60px #0004}
+.hero-card h3{font-size:22px;margin-bottom:14px}.hero-card p{font-size:15px}
+.stat{display:flex;gap:15px;padding:15px 0;border-top:1px solid #ffffff18}.stat strong{color:var(--gold);font-size:24px}
+section{padding:85px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+.section-head h2{font-size:38px;line-height:1.15;margin:10px 0}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid #e7e9ee;border-radius:15px;padding:28px;background:#fff;box-shadow:0 8px 30px #1018280b}
+.icon{width:48px;height:48px;border-radius:12px;background:#f8edcf;color:#9b721e;display:grid;place-items:center;font-size:23px;margin-bottom:18px}
+.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:15px}
+.dark{background:var(--dark);color:#fff}.dark .section-head p{color:#b9c2d1}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{position:relative}.num{color:var(--gold);font-size:30px;font-weight:900}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about h2{font-size:40px;line-height:1.15;margin:10px 0 20px}.about p{color:var(--muted);margin-bottom:15px}
+.check{margin:12px 0;font-weight:700}.check span{color:#b48522;margin-right:8px}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}.contact-box{background:var(--cream);border-radius:18px;padding:35px}
+form{display:grid;gap:14px}input,textarea,select{width:100%;padding:14px 15px;border:1px solid #d9dde5;border-radius:8px;font:inherit}textarea{min-height:130px;resize:vertical}
+footer{background:#070d17;color:#aeb7c7;padding:30px 0}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer strong{color:#fff}
+.floating{position:fixed;right:20px;bottom:20px;background:#22c55e;color:#fff;padding:13px 17px;border-radius:50px;font-weight:900;box-shadow:0 10px 30px #0003;z-index:30}
+.note{font-size:12px;color:#7b8492;margin-top:10px}
+@media(max-width:800px){
+ nav{display:none;position:absolute;left:0;right:0;top:72px;background:var(--dark);padding:20px;flex-direction:column}
+ nav.open{display:flex}.menu{display:block}.hero-grid,.about,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.hero{padding:75px 0}
+}
+@media(max-width:480px){.steps{grid-template-columns:1fr}section{padding:65px 0}.hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">ONE UNIT <span>IMPORT</span></a>
+    <button class="menu" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#how">How It Works</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Global sourcing made simple</div>
+   <h1>Shop worldwide.<br><span style="color:var(--gold)">We bring it to you.</span></h1>
+   <p>ONE UNIT IMPORT helps customers source products from stores all over the world and arrange delivery directly to their doorstep.</p>
+   <div class="actions"><a class="btn btn-gold" href="#contact">Request an Import</a><a class="btn btn-outline" href="#how">How It Works</a></div>
+  </div>
+  <div class="hero-card">
+   <h3>Your global shopping partner</h3><p>Tell us what you want, where you found it, and where you need it delivered. We'll guide you through the sourcing and shipping process.</p>
+   <div class="stat"><strong>01</strong><div><b>Source</b><br>Find the product you need.</div></div>
+   <div class="stat"><strong>02</strong><div><b>Import</b><br>Coordinate international purchase.</div></div>
+   <div class="stat"><strong>03</strong><div><b>Deliver</b><br>Arrange shipment to your destination.</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">What we do</div><h2>One service. Many destinations.</h2><p>Built for people who want access to products beyond their local market.</p></div>
+  <div class="cards">
+   <div class="card"><div class="icon">🌍</div><h3>Worldwide Sourcing</h3><p>We help you identify and source products from stores and suppliers around the world.</p></div>
+   <div class="card"><div class="icon">📦</div><h3>Import Coordination</h3><p>We help coordinate the purchase, documentation and shipping process for your order.</p></div>
+   <div class="card"><div class="icon">🚚</div><h3>Doorstep Delivery</h3><p>We arrange shipping so your order can make its way to your preferred delivery destination.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="how">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Simple process</div><h2>How ONE UNIT IMPORT works</h2><p>From product link to delivery, we keep the process clear.</p></div>
+  <div class="steps">
+   <div class="step"><div class="num">01</div><h3>Send the product</h3><p>Share a product link, photo or description with us.</p></div>
+   <div class="step"><div class="num">02</div><h3>Get a quote</h3><p>We'll review the request and provide available pricing and shipping details.</p></div>
+   <div class="step"><div class="num">03</div><h3>Confirm order</h3><p>Once everything is agreed, we proceed with the import arrangement.</p></div>
+   <div class="step"><div class="num">04</div><h3>Receive it</h3><p>Your order is shipped toward the destination you provided.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="container about">
+  <div>
+   <div class="eyebrow">About us</div><h2>Making international shopping easier.</h2>
+   <p>ONE UNIT IMPORT was created to make it easier for customers to access products sold in other markets without having to manage every part of the international purchasing process themselves.</p>
+   <p>Whether you've found a product in the USA, Europe, Asia or another market, our team can help you understand the next steps for sourcing and delivery.</p>
+   <div class="check"><span>✓</span> Global product sourcing</div>
+   <div class="check"><span>✓</span> Clear order communication</div>
+   <div class="check"><span>✓</span> Shipping coordination</div>
+  </div>
+  <div class="contact-box"><div class="eyebrow">Our promise</div><h2 style="font-size:32px;margin:10px 0">Clear. Convenient. Connected.</h2><p>We aim to make every import request straightforward, with clear communication from your first inquiry through the shipping process.</p></div>
+ </div>
+</section>
+
+<section class="dark" id="contact">
+ <div class="container contact">
+  <div>
+   <div class="eyebrow">Start an order</div><h2 style="font-size:42px;line-height:1.15;margin:10px 0 18px">Tell us what you want to import.</h2>
+   <p style="color:#b9c2d1">Send the product details and destination. We'll use the information to follow up with you.</p>
+   <p style="margin-top:25px"><strong>Email:</strong> Replace with your official business email</p>
+   <p><strong>Phone/WhatsApp:</strong> Replace with your official number</p>
+  </div>
+  <div class="contact-box">
+   <form onsubmit="submitForm(event)">
+    <input id="name" required placeholder="Your name">
+    <input id="email" type="email" required placeholder="Your email">
+    <input id="product" required placeholder="Product or store link">
+    <select id="destination" required><option value="">Delivery destination</option><option>Nigeria</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Other</option></select>
+    <textarea id="message" placeholder="Tell us what you need..."></textarea>
+    <button class="btn btn-gold" type="submit">Send Import Request</button>
+   </form>
+   <div class="note">Demo form: connect this form to your business email or form service before publishing.</div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="container footer"><div><strong>ONE UNIT IMPORT</strong><br>Global sourcing & delivery.</div><div>© <span id="year"></span> ONE UNIT IMPORT. All rights reserved.</div></div></footer>
+<a class="floating" href="#contact">Chat / Request</a>
+<script>
+function toggleMenu(){document.getElementById('nav').classList.toggle('open')}
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+function submitForm(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value;
+ alert("Thanks, "+n+"! Your request has been captured in this demo. Connect the form to your official business email before publishing.");
+}
+</script>
+</body>
+</html>
